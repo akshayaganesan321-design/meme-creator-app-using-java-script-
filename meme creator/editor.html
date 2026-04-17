@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+<header>
+  <h2>Meme Generator</h2>
+  <button onclick="toggleDark()">Dark Mode</button>
+</header>
+
+<!-- Navigation bar -->
+<nav>
+  <a href="home.html">Home</a>
+  <a href="editor.html">Editor</a>
+  <a href="about.html">About</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<div class="toolbar">
+  <input type="file" id="upload">
+  <input type="text" id="caption" placeholder="Enter meme text">
+  <button onclick="addText()">Add Text</button>
+  <button onclick="generateAI()">AI Caption</button>
+
+  <select id="filter" onchange="applyFilter()">
+    <option value="none">No Filter</option>
+    <option value="grayscale(1)">Grayscale</option>
+    <option value="sepia(1)">Sepia</option>
+    <option value="invert(1)">Invert</option>
+    <option value="contrast(200%)">High Contrast</option>
+  </select>
+
+  <button onclick="download()">Download</button>
+  <button onclick="saveMeme()">Save</button>
+  <button onclick="eraseText()">Erase Text</button>
+</div>
+
+<div class="templates">
+  <img src="vadivelu 1.jpg" onclick="loadTemplate(this)">
+  <img src="fanart, robin son.jpg" onclick="loadTemplate(this)">
+  <img src="muthupandi.jpg" onclick="loadTemplate(this)">
+  <img src="absolute cinema.jpg" onclick="loadTemplate(this)">
+</div>
+
+<!-- Editor canvas -->
+<div class="editor">
+  <canvas id="canvas"></canvas>
+</div>
+
+<h3>Saved Memes</h3>
+<div id="gallery"></div>
+
+<script src="editor.js"></script>
+</body>
+</html>

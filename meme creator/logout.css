@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white;
+  text-align: center;
+  animation: bgShift 12s infinite alternate;
+}
+
+@keyframes bgShift {
+  0% { background: linear-gradient(135deg, #ff6a00, #ee0979); }
+  100% { background: linear-gradient(135deg, #2575fc, #6a11cb); }
+}
+
+header {
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+}
+
+nav {
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4757;
+  text-decoration: underline;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 500px;
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #ff4757;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

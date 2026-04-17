@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: backgroundShift 10s infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% { background: linear-gradient(135deg, #ff6a00, #ee0979); }
+  100% { background: linear-gradient(135deg, #ff0000, #6a11cb); }
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 320px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 8px rgba(255,106,0,0.6);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Login button */
+button[onclick="login()"] {
+  background: #ff6a00;
+  color: white;
+}
+
+button[onclick="login()"]:hover {
+  background: #ee0979;
+  transform: scale(1.05);
+}
+
+/* Logout button */
+button[onclick="logout()"] {
+  background: #e74c3c;
+  color: white;
+}
+
+button[onclick="logout()"]:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 10px;
+  color: red;
+}

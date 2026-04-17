@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Meme Creator</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+  <h2>Meme Creator - Home</h2>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="editor.html">Editor</a>
+  <a href="about.html">About</a>
+  <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+  <h3>Categories</h3>
+  <div class="categories">
+
+    <div class="category">
+      <img src="steve.jpg" alt="Funny Meme">
+      <button onclick="addToWishlist('Funny')">😂 Funny</button>
+    </div>
+
+    <div class="category">
+      <img src="download (1).jpg" alt="Programming Meme">
+      <button onclick="addToWishlist('Programming')">💻 Programming</button>
+    </div>
+
+    <div class="category">
+      <img src="download (2).jpg" alt="School Meme">
+      <button onclick="addToWishlist('School')">📚 School</button>
+    </div>
+
+    <div class="category">
+      <img src="download (3).jpg" alt="Work Meme">
+      <button onclick="addToWishlist('Work')">🏢 Work</button>
+    </div>
+    <!-- More options -->
+    <div class="category">
+      <img src="download(7).jpg" alt="Animals Meme">
+      <button onclick="addToWishlist('Animals')">🐶 Animals</button>
+    </div>
+
+    <div class="category">
+      <img src="download(5).jpg" alt="Sports Meme">
+      <button onclick="addToWishlist('Sports')">⚽ Sports</button>
+    </div>
+
+    <div class="category">
+      <img src="download (4).jpg" alt="Movies Meme">
+      <button onclick="addToWishlist('Movies')">🎬 Movies</button>
+    </div>
+
+  </div>
+
+  <h3>Search Memes</h3>
+  <input type="text" id="searchBox" placeholder="Search memes...">
+  <button onclick="searchMemes()">Search</button>
+  <p id="searchResult"></p>
+
+  <h3>Wishlist</h3>
+  <ul id="wishlist"></ul>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+To design and develop a responsive Meme Creator Web Application using HTML, CSS, and JavaScript that includes a Home page, Meme Editor, About page, and Logout page, enabling users to create, edit, and download custom memes easily while providing a simple and user-friendly interface for meme generation and application navigation.  
